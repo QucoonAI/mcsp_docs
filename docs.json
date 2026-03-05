@@ -1,0 +1,187 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "MTN Cloud Streaming Platform",
+  "description": "Technical architecture documentation for the MTN Cloud Streaming Platform — a large-scale, multi-tenant SaaS video and audio streaming service built on MTN infrastructure.",
+  "colors": {
+    "primary": "#FFCC00",
+    "light": "#FFE066",
+    "dark": "#1A4A7A"
+  },
+  "logo": {
+    "light": "/logo/dark.svg",
+    "dark": "/logo/light.svg",
+    "href": "/overview/introduction"
+  },
+  "favicon": "/favicon.svg",
+  "font": {
+    "headings": { "family": "IBM Plex Sans" },
+    "body": { "family": "IBM Plex Sans" }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "MTN Cloud",
+        "href": "https://mtn.com"
+      }
+    ],
+    "primary": {
+      "type": "link",
+      "label": "Request Access",
+      "href": "https://mtn.com/cloud"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/mtn"
+    },
+    "links": [
+      {
+        "header": "Platform",
+        "items": [
+          { "label": "Overview", "href": "/overview/introduction" },
+          { "label": "Architecture", "href": "/architecture/high-level-diagram" },
+          { "label": "ADRs", "href": "/decisions/overview" }
+        ]
+      },
+      {
+        "header": "Reference",
+        "items": [
+          { "label": "Glossary", "href": "/reference/glossary" },
+          { "label": "Kafka Topics", "href": "/reference/kafka-topics" },
+          { "label": "Risk Register", "href": "/reference/risk-register" }
+        ]
+      }
+    ]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Changelog",
+          "icon": "clock-rotate-left",
+          "href": "/changelog/v1-0"
+        },
+        {
+          "anchor": "Risk Register",
+          "icon": "triangle-exclamation",
+          "href": "/reference/risk-register"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Overview",
+        "icon": "house",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "overview/introduction",
+              "overview/platform-at-a-glance",
+              "overview/design-principles",
+              "overview/scale-assumptions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Architecture",
+        "icon": "diagram-project",
+        "groups": [
+          {
+            "group": "Solution Architecture",
+            "pages": [
+              "architecture/high-level-diagram",
+              "architecture/layer-breakdown",
+              "architecture/communication-model"
+            ]
+          },
+          {
+            "group": "Infrastructure",
+            "pages": [
+              "architecture/infrastructure-network",
+              "infrastructure/security-design",
+              "infrastructure/scalability-resilience",
+              "infrastructure/data-residency"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Services",
+        "icon": "cubes",
+        "groups": [
+          {
+            "group": "Application Layer",
+            "pages": [
+              "services/overview",
+              "services/auth-service",
+              "services/upload-service",
+              "services/content-service",
+              "services/playback-service",
+              "services/engagement-service",
+              "services/subscription-service",
+              "services/notification-service",
+              "services/creator-dashboard",
+              "services/admin-control-plane"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Pipelines",
+        "icon": "arrow-progress",
+        "groups": [
+          {
+            "group": "System Flows",
+            "pages": [
+              "pipelines/media-ingestion",
+              "pipelines/adaptive-streaming",
+              "pipelines/ml-recommendations",
+              "pipelines/billing-payments",
+              "pipelines/content-moderation",
+              "pipelines/drm-content-security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Decisions",
+        "icon": "scale-balanced",
+        "groups": [
+          {
+            "group": "Architecture Decision Records",
+            "pages": [
+              "decisions/overview",
+              "decisions/adr-001-event-driven-pipeline",
+              "decisions/adr-002-cdn-first-delivery",
+              "decisions/adr-003-nigeria-residency-iam",
+              "decisions/adr-004-multi-drm-cmaf",
+              "decisions/adr-005-storage-tiering-engine",
+              "decisions/adr-006-two-tower-ml",
+              "decisions/adr-007-dual-currency-payout",
+              "decisions/adr-008-saga-orchestration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Technical Reference",
+            "pages": [
+              "reference/glossary",
+              "reference/kafka-topics",
+              "reference/storage-model",
+              "reference/bandwidth-profile",
+              "reference/risk-register"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
